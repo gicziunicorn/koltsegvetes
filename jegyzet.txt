@@ -1,0 +1,6 @@
+04. 27.
+    fájlszerkezet
+    adatbázis
+    github
+    alap dizájn és html
+    php eleje (login, regist, connection)
