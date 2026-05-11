@@ -7,24 +7,23 @@
 - ### adatok - Felhasználói adatok tábla
 |    név    |              leírás                    |    típus     |
 | --------- | -------------------------------------- | ------------ |
-| id        | A felhasználó egyedi azonosítója       | int          |
-| egyenleg  | A felhasználó egyenlege                | bigint       |
-| nev       | A felhasználó neve                     | varchar(70)  |
+| nev (PK)  | A felhasználó neve                     | varchar(100) |
 | jelszo    | A felhasználó jelszava (titkosítva)    | varchar(255) |
-| keret     | A felhasználó havi kiadásának a kerete | int          |
+| egyenleg  | A felhasználó egyenlege                | bigint       |
+| keret     | A felhasználó havi kiadásának a kerete | bigint       |
 
 - ### bevetelek - Bevételek tábla
 |    név    |          leírás        |   típus  |
 | --------- | ---------------------- | -------- |
-| id        | Egyedi azonosító       | int      |
+| id (PK)   | Egyedi azonosító       | int      |
 | osszeg    | A bevétel összege      | bigint   |
 | idopont   | A bevétel időpontja    | datetime |
 | kategoria | A bevétel kategóriája  | varchar(50) |
 
 - ### kiadasok - Kiadások tábla
 |    név    |         leírás        |   típus  |
-| --------- | -------------------   | -------- |
-| id        | Egyedi azonosító      | int      |
-| osszeg    | A kiadás összege      |  bigint  |
-| idopont   | A kiadás időpontja    | datetime |
+| --------- | --------------------- | -------- |
+| id (PK)   | Egyedi azonosító      | int      |
+| osszeg    | A bevétel összege     | bigint   |
+| idopont   | A bevétel időpontja   | datetime |
 | kategoria | A bevétel kategóriája | varchar(50) |
