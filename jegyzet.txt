@@ -4,3 +4,16 @@
     github
     alap dizájn és html
     php eleje (login, regist, connection)
+
+05. 11.
+    css (login form)
+    Bartucz nem csinált semmit
+    html login form
+    er diagram
+
+
+TODO:
+    adatbázis
+    háttér
+    dokumentáció
+    gantt diagram
