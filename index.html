@@ -1,22 +1,36 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="hu-HU">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Személyes Pénzügyi Tervező</title>
     <link rel="stylesheet" href="./public/style.css">
     <script src="./public/main.js"></script>
+    <link rel="icon" type="image/x-icon" href="pfp.png">
 </head>
+
 <body>
     <h1>Személyes Pénzügyi Tervező</h1>
-    <div>
-        <h2>Üdvözlünk!</h2>
-        <p>Kérjük jelentkezz be</p>
-        <form action="./php/main.php" method="post">
-            <label for="nev">Neved<input type="text" name="nev" id="nev" required></label>
-            <label for="pass">Jelszó<input type="password" name="pass" id="pass" required></label>
-            <button type="submit">Bejelentkezés</button>
-        </form>
-    </div>
+    <main>
+        <div id="kulso-div">
+            <h2>Üdvözöljük!</h2>
+            <p>Kérjük jelentkezzen be</p>
+            <form action="./php/main.php" method="post">
+                <div id="input-div">
+                    <div>
+                        <label for="nev">Neve: </label>
+                        <input type="text" name="nev" id="nev" required>
+                    </div>
+                    <div>
+                        <label for="pass">Jelszava: </label>
+                        <input type="password" name="pass" id="pass" required>
+                    </div>
+                </div>
+                <button type="submit">Bejelentkezés</button>
+            </form>
+        </div>
+    </main>
 </body>
+
 </html>
