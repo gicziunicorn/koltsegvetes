@@ -94,8 +94,9 @@ main {
                 background-color: #ececec;
 
                 &:focus {
-                    /* border with a strip instead of giving a white bg to the label (so it works with a custom bg color, different than the body's) 
-                    background-image: linear-gradient(#ececec), linear-gradient(#ececec), linear-gradient(var(--border-active));
+                    /* not using because I had a better solution but it'll stay here! */
+                    /* border with a strip instead of giving a white bg to the label (so it works with a custom bg color, different than the body's) */
+                    /*background-image: linear-gradient(#ececec), linear-gradient(#ececec), linear-gradient(var(--border-active));
                     background-origin: border-box;
                     background-clip: padding-box, border-box, border-box;
                     border: 2px solid transparent;
@@ -104,13 +105,8 @@ main {
                     background-position: center, 15px top;*/
                     border: 2px solid var(--border-active);
                 }
-
                 &:focus, &:valid {
                     outline: none;
-                }
-                &:focus {
-                    outline: none;
-                    /*border: 2px solid var(--border-active);*/
                 }
                 &:focus ~ label, &:valid ~ label {
                     transform: translate(-50%, -70%) scale(1);
