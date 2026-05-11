@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="hu-HU">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,19 +12,17 @@
 <body>
     <h1>Személyes Pénzügyi Tervező</h1>
     <main>
-        <div id="kulso-div">
+        <div id="form">
             <h2>Üdvözöljük!</h2>
             <p>Kérjük jelentkezzen be</p>
             <form action="./php/main.php" method="post">
-                <div id="input-div">
-                    <div>
-                        <label for="nev">Neve: </label>
-                        <input type="text" name="nev" id="nev" required>
-                    </div>
-                    <div>
-                        <label for="pass">Jelszava: </label>
-                        <input type="password" name="pass" id="pass" required>
-                    </div>
+                <div>
+                    <input type="text" name="nev" id="nev" required>
+                    <label for="nev">Név</label>
+                </div>
+                <div>
+                    <input type="password" name="pass" id="pass" required>
+                    <label for="pass">Jelszó</label>
                 </div>
                 <button type="submit">Bejelentkezés</button>
             </form>
