@@ -14,15 +14,17 @@
 | keret     | A felhasználó havi kiadásának a kerete | int          |
 
 - ### bevetelek - Bevételek tábla
-|   név   |         leírás       |   típus  |
-| ------- | -------------------- | -------- |
-| id      | Egyedi azonosító     | int      |
-| osszeg  | A bevétel összege    | bigint   |
-| idopont | A bevétel időpontja  | datetime |
+|    név    |          leírás        |   típus  |
+| --------- | ---------------------- | -------- |
+| id        | Egyedi azonosító       | int      |
+| osszeg    | A bevétel összege      | bigint   |
+| idopont   | A bevétel időpontja    | datetime |
+| kategoria | A bevétel kategóriája  | varchar(50) |
 
 - ### kiadasok - Kiadások tábla
-|   név   |        leírás       |   típus  |
-| ------- | ------------------- | -------- |
-| id      | Egyedi azonosító    | int      |
-| osszeg  | A kiadás összege    |  bigint  |
-| idopont | A kiadás időpontja  | datetime |
+|    név    |         leírás        |   típus  |
+| --------- | -------------------   | -------- |
+| id        | Egyedi azonosító      | int      |
+| osszeg    | A kiadás összege      |  bigint  |
+| idopont   | A kiadás időpontja    | datetime |
+| kategoria | A bevétel kategóriája | varchar(50) |
