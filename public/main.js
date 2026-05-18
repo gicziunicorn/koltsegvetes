@@ -1,4 +1,6 @@
 console.log("fut");
 
-const button = document.getElementById("logout");
-console.log(button);
+fetch("../php/adatok.php").then(response => response.json())
+.then(data => {
+    console.log(data);
+});

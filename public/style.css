@@ -2,6 +2,7 @@
     --primary: #1a76ff;
     --border-active: #0065fc;
     --border-inactive: black /*#787878*/;
+    --bg: #bcbcbc;
 }
 
 @font-face {
@@ -10,7 +11,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: var(--bg);
     color: black;
     margin: 0;
     height: 100vh;
@@ -51,6 +52,7 @@ main {
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    background-color: transparent;
 
     #form {
         border: solid, var(--primary), 2px;
@@ -113,13 +115,13 @@ main {
                     font-size: 12px;
                     background-color: white;
                     border-radius: 20px;
-                    padding: 0 .3em;
+                    padding: .1em .6em;
                 }
                 &:valid ~ label {
                     border: 1px solid var(--border-inactive);
                 }
                 &:focus ~ label {
-                    color: var(--border-active);
+                    /*color: var(--border-active);*/
                     border: 1px solid var(--border-active);
                 }
             }
@@ -128,7 +130,7 @@ main {
                 position: absolute;
                 left: 15px;
                 font-size: 0.9rem;
-                color: var(--border-inactive);
+                color: #676767;
                 pointer-events: none;
                 transform: translateY(calc(0.6rem - 1px));
                 transition: 150ms cubic-bezier(0.4,0,0.2,1);
@@ -174,3 +176,15 @@ main {
     }
 }
 
+#data-main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: unset;
+
+    #egyenleg {
+        width: fit-content;
+        border-radius: 20px;
+        border: 2px solid var(--primary);
+        padding: 20px;
+    }
+}
