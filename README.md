@@ -46,7 +46,7 @@
     - Logó megtervezése: [Canva](https://www.canva.com/).
     - Fájlok megosztása és publikálása [Github](https://github.com/).
     - Adatbászis létrehozása és tesztelése: [MySQL](https://www.mysql.com/) és [phpMyAdmin](https://www.phpmyadmin.net/).
-    - Apache és a phpMyAdmin kezelése: [xampp](https://www.apachefriends.org/).
+    - Apache és a phpMyAdmin kezelése: [XAMPP](https://www.apachefriends.org/).
 
 ## Adatbázis felépítése
 
