@@ -11,9 +11,13 @@
     html login form
     er diagram
 
+05. 18.
+    gantt diagram
+    a php nem MŰKÖDIK
+    
+
 
 TODO:
     adatbázis
     háttér
     dokumentáció
-    gantt diagram
