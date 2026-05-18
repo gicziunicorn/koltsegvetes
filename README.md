@@ -12,6 +12,45 @@
 
 >A célünk egy könnyen használható és egyszerű költségvetés tervező oldal.
 
+<br>
+
+### A weboldal használata:
+   - A weboldal megnyitása után egy kezdőlap látható.
+   - Ebben a menüben a "Kezdés" gombbal lehet kezdeni a kvízt.
+   - A kvíz tetszőleges számú kérdésből állhat, a felhasználó által kiválasztott beállítás alapján.
+   - Minden kérdéshez három válasz van megadva, ezekből mindig csak egy helyes.
+
+<br>
+
+### Fontosabb felhasználói tudnivalók:
+
+- #### Hardver követelmény:
+
+    - Bármely számítógép, ami egy modern webes böngésző futtatására képes elég. A weboldal nem tartalmaz hardverigényes kódot.
+
+
+- #### Szoftver követelmény:
+
+  - Modern webes böngésző, annak elfuttatására képes operációs rendszer. Továbbá internet elérés szükséges.
+
+<br>
+
+### Fejlesztői leírás:
+ - #### Használt nyelvek:
+    - HTML 5
+    - CSS
+    - JavaScript
+    - SQL
+    - PHP
+
+ - #### Használt alkalmazások:
+    - Kód megírása: [Visual Studio Code](https://code.visualstudio.com/).
+    - Tesztelés: [Google Chrome](https://www.google.com/chrome/) és [Apache](https://httpd.apache.org/).
+    - Logó megtervezése: [Canva](https://www.canva.com/).
+    - Fájlok megosztása és publikálása [Github](https://github.com/).
+    - Adatbászis létrehozása és tesztelése: [MySQL](https://www.mysql.com/) és [phpMyAdmin](https://www.phpmyadmin.net/).
+    - Apache és a phpMyAdmin kezelése: [xampp](https://www.apachefriends.org/).
+
 ## Adatbázis felépítése
 
 - #### Adatbázis neve: koltsegvetes
