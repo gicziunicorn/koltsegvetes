@@ -23,7 +23,7 @@
 
 - #### Hardver követelmény:
 
-    - Bármely számítógép, ami egy modern webes böngésző futtatására képes elég. A weboldal nem tartalmaz hardverigényes kódot.
+    - Bármely számítógép, amely egy modern webes böngésző futtatására képes elég. A weboldal nem tartalmaz hardverigényes kódot.
 
 
 - #### Szoftver követelmény:
@@ -36,9 +36,9 @@
  - #### Használt nyelvek:
     - HTML 5
     - CSS
-    - JavaScript
-    - SQL
     - PHP
+    - SQL
+    - Javascript
 
  - #### Használt alkalmazások:
     - Kód megírása: [Visual Studio Code](https://code.visualstudio.com/).
