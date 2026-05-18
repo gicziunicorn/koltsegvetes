@@ -14,10 +14,10 @@
 05. 18.
     gantt diagram
     a php nem MŰKÖDIK
-    
+    dokumentáció kezdete
 
 
 TODO:
     adatbázis
     háttér
-    dokumentáció
+    dokumentáció befejezése
