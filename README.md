@@ -1,4 +1,16 @@
-# Személyes Pénzügyi Tervező
+<div align = center>
+
+# <img src="https://avatars.githubusercontent.com/u/230545579?s=400&u=6530a65160b0443d1bfd6764ea9d9b95803fa133&v=4" width=38 align=top> AlphaCode – Személyes pénzügyi tervező
+
+</div>
+
+### Készítők: Giczi Dániel, Bartucz Gábor Imre
+
+<br>
+
+## A projektről:
+
+>A célünk egy könnyen használható és egyszerű költségvetés tervező oldal.
 
 ## Adatbázis felépítése
 
