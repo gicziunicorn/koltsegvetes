@@ -15,10 +15,7 @@
 <br>
 
 ### A weboldal használata:
-   - A weboldal megnyitása után egy kezdőlap látható.
-   - Ebben a menüben a "Kezdés" gombbal lehet kezdeni a kvízt.
-   - A kvíz tetszőleges számú kérdésből állhat, a felhasználó által kiválasztott beállítás alapján.
-   - Minden kérdéshez három válasz van megadva, ezekből mindig csak egy helyes.
+   -
 
 <br>
 
