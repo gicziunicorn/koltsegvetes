@@ -21,3 +21,7 @@ TODO:
     adatbázis
     háttér
     dokumentáció befejezése
+    bevetel szerkesztő
+    er
+    editor bezárása beküldés után
+    editor inputok törlése bezáráskor
