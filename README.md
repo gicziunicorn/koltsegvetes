@@ -17,12 +17,12 @@
 <br>
 
 ### A weboldal használata:
-   -A weboldal megnyitásakor egy regisztrációs felület jelenik meg.
-   -A név és jelszó megadása után a fiókunkat létre tudjuk hozni a "Létrehozás gombbal".
-   -A fiók létrehozása után a jelszót újra be kell írni a bejelentkezéshez.
-   -A bejelentkezés után a pénzügyi tervezőbe jutunk.
-   -Ebben a menüben látjuk az egyenlegünket, és be tudjuk írni a bevételeinket és a kiadásainkat.
-   -Ezeken a menükben a bevétel/kiadás összegét, kategóriáját, időpontját, és leírását muszály begépelni.
+   - A weboldal megnyitásakor egy regisztrációs felület jelenik meg.
+   - A név és jelszó megadása után a fiókunkat létre tudjuk hozni a "Létrehozás gombbal".
+   - A fiók létrehozása után a jelszót újra be kell írni a bejelentkezéshez.
+   - A bejelentkezés után a pénzügyi tervezőbe jutunk.
+   - Ebben a menüben látjuk az egyenlegünket, és be tudjuk írni a bevételeinket és a kiadásainkat.
+   - Ezeken a menükben a bevétel/kiadás összegét, kategóriáját, időpontját, és leírását muszály begépelni.
 
 <br>
 
