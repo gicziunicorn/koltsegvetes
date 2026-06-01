@@ -4,7 +4,7 @@
 
 </div>
 
-## A dokumentáció még nincs kész!
+
 
 ### Készítők: Giczi Dániel, Bartucz Gábor Imre
 
