@@ -24,6 +24,8 @@ if (!$osszeg || !$idopont || !$category || !$note) {
 try {
     $stmt = $conn->prepare("INSERT INTO tranzakciok (id, osszeg, idopont, kategoria, note) VALUES (NULL, ?, ?, ?, ?)");
     $stmt->execute([$osszeg, $idopont, $category, $note]);
+    $stmt = $conn->prepare("UPDATE adatok SET egyenleg = egyenleg + ?");
+    $stmt->execute([$osszeg]);
 }
 catch (PDOException $e) {
     echo $e->getMessage();
