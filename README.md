@@ -6,7 +6,7 @@
 
 
 
-### Készítők: Giczi Dániel, Bartucz Gábor Imre
+<h2>Készítők: Giczi Dániel, Bartucz Gábor Imre</h2>
 
 <br>
 
