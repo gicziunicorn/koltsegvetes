@@ -54,3 +54,8 @@
     - Fájlok megosztása és publikálása [Github](https://github.com/).
     - Adatbászis létrehozása és tesztelése: [MySQL](https://www.mysql.com/) és [phpMyAdmin](https://www.phpmyadmin.net/).
     - Apache és a phpMyAdmin kezelése: [XAMPP](https://www.apachefriends.org/).
+
+<br>
+
+### Az adatbázis
+![ek-diagram](/dokumentumok/ek-diagram.png)
