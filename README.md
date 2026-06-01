@@ -58,4 +58,4 @@
 <br>
 
 ### Az adatbázis
-![ek-diagram](/dokumentumok/ek-diagram.png)
+![ek-diagram](/dokumentumok/er-diagram.png)
