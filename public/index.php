@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div id="overlay" style="/*display:none;*/background-color:#00000044;position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:10;"></div>
+    <div id="overlay" style="display:none;background-color:#00000044;position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:10;"></div>
     <nav>
         <h1>Személyes Pénzügyi Tervező</h1>
         <?php if(isset($_SESSION['egyenleg'])): ?>
@@ -29,7 +29,10 @@
     <?php if(!isset($_SESSION['egyenleg'])): ?>
     <main id="form-main">
         <div id="form">
-            <p> <?php echo $_SESSION['msg']; unset($_SESSION['msg']);?> </p>
+            <p> <?php if( isset($_SESSION['msg']) ) {
+                echo $_SESSION['msg'];
+                unset($_SESSION['msg']);
+            }?> </p>
             <h2>Üdvözlünk<?php echo ($_SESSION['user_exists']) ? ", ".$_SESSION['nev'] : ""; ?>!</h2>
             <p><?php echo ($_SESSION['user_exists']) ? "Kérjük add meg a jelszavad:" : "Az adatbázis nem tartalmaz felhasználót. Kérjük hozz létre egyet!"; ?></p>
             <form action="../php/main.php" method="post">
