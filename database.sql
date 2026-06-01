@@ -36,12 +36,6 @@ CREATE TABLE `adatok` (
   `keret` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_hungarian_ci;
 
---
--- Dumping data for table `adatok`
---
-
-INSERT INTO `adatok` (`nev`, `jelszo`, `egyenleg`, `keret`) VALUES
-('dani', '$2y$12$AuMEGv4.yB5w/uKYYbWpMuDcFWnKaDyGdew3Xog7TCINFR93.nLFO', 0, 0);
 
 -- --------------------------------------------------------
 
