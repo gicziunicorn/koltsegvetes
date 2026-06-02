@@ -72,58 +72,78 @@ $(document).ready(function () {
 
   let submitListener = undefined;
 
-  function setUpEditor(title, etype, radioValues, btnText) {
-    $("#editor > h3").text(title);
-    $("#editor > #submit").text(btnText);
-    $("#categories").append($("<p></p>").text("Kategória"));
-    for (val of radioValues) {
-      const label = $("<label></label>").text(val).attr("for", val);
-      const newRadio = $(
-        `<input type="radio" name="cat" id="${val}" value="${val}" ${
-          val == "Egyéb" ? "checked" : ""
-        }>`
-      );
-      $("#categories").append(newRadio, label);
+    $("#bev-add").on("click", function() {
+        const radioValues = ["Fizetés", "Nyugdíj", "Bevétel", "GYES / GYED", "Számla", "Befektetés", "Kripto", "Egyéb"];
+        setUpEditor("Bevétel hozzáadása", "bevetel", radioValues, "Hozzáadás");
+    });
+
+
+    $("#kiad-add").on("click", function() {
+        const radioValues = ["Egészség", "Élelmiszer", "Ruházat", "Játék", "Hobbi", "Közlekedés", "Nyaralás", "Megtakarítás", "Egyéb"];
+        setUpEditor("Kiadás hozzáadása", "kiadas", radioValues, "Hozzáadás");
+    });
+
+    let submitListener = undefined;
+
+    function setUpEditor(title, etype, radioValues, btnText) {
+        $("#editor > h3").text(title);
+        $("#editor > #submit").text(btnText);
+        $("#categories").append(
+            $("<p></p>").text("Kategória")
+        );
+        for (val of radioValues) {
+            const label = $("<label></label>").text(val).attr("for", val);
+            const newRadio = $(`<input type="radio" name="cat" id="${val}" value="${val}" ${val=="Egyéb"?"checked":""}>`);
+            $("#categories").append(newRadio, label);
+        }
+
+        $("#editor-cont").css("display", "flex");
+
+        $("#submit").on("click.submit", async function() {
+            console.log("submit!");
+            var osszeg = parseInt($("#osszeg").val().replace(/\s/g, ""));
+            if (etype==="kiadas") { osszeg *= -1 };
+            const idopont = $("#idopont").val();
+            const category = $("input[name='cat']:checked").val();
+            const note = $("#note").val();
+            console.log(osszeg, idopont, category, note);
+            //throw new Error("ok");
+            const res = await fetch("../php/add.php", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({
+                    osszeg: osszeg,
+                    idopont: idopont,
+                    category: category,
+                    note: note
+                })
+            });
+            if (!res.ok) {
+                window.alert("error");
+                throw new Error("problem");
+            }
+            const resText = await res.text();
+            if (resText !== "ok") {
+                window.alert("error");
+                throw new Error(resText);
+            }
+
+            closeEditor();
+            window.alert("Sikeresen rögzítve!");
+        });
+        
     }
 
-    $("#editor-cont").css("display", "flex");
+    function closeEditor() {
+        $("#submit").off(".submit");
+        $("#editor-cont").css("display", "none");
+        $("#osszeg").val("");
+        $("#idopont").val("");
+        $("#note").val("");
+        $("#categories").empty();
+    };
 
-    $("#submit").on("click.submit", async function () {
-      console.log("submit!");
-      var osszeg = parseInt($("#osszeg").val().replace(/\s/g, ""));
-      if (etype === "kiadas") {
-        osszeg *= -1;
-      }
-      const idopont = $("#idopont").val();
-      const category = $("input[name='cat']:checked").val();
-      const note = $("#note").val();
-      console.log(osszeg, idopont, category, note);
-      //throw new Error("ok");
-      const res = await fetch("../php/add.php", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          osszeg: osszeg,
-          idopont: idopont,
-          category: category,
-          note: note,
-        }),
-      });
-      if (!res.ok) {
-        window.alert("error");
-        throw new Error("problem");
-      }
-      const resText = await res.text();
-      if (resText !== "ok") {
-        window.alert("error");
-        throw new Error(resText);
-      }
-      window.alert("Sikeresen rögzítve!");
-
-      $("#osszeg>p").text(parseInt($("#osszeg>p").text()) + osszeg);
-      console.log(parseInt($("#osszeg>p").text()) + osszeg);
-    });
-  }
+    $("#close-editor").on("click", closeEditor);
 
   $("#close-editor").on("click", function () {
     $("#submit").off(".submit");
