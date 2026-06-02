@@ -57,7 +57,7 @@ main {
   background-color: transparent;
 
   #form {
-    border: solid, var(--primary), 2px;
+    border: solid, var(--primary), 4px;
     border-radius: 10px;
     height: auto;
     display: flex;
@@ -68,7 +68,8 @@ main {
     flex-direction: column;
     gap: 10px;
     padding: 20px;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px var(--primary);
+    background-color: white;
 
     h2 {
       margin: 0;
@@ -183,7 +184,7 @@ main {
 
 #data-main {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
   justify-content: unset;
   padding: 105px 30px 0px 30px;
@@ -236,6 +237,7 @@ main {
       justify-content: center;
       border-radius: 6px;
       background-color: #ececec;
+      justify-self: end;
       transition: background-color 0.2s linear;
       &:hover {
         background-color: #cccccc;
@@ -260,6 +262,51 @@ main {
     grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
+
+    .transactions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 16px;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      grid-column: span 2;
+    }
+
+    .transaction-card {
+      border-radius: 10px;
+      border: 2px solid var(--primary);
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto 1fr;
+      align-items: end;
+      gap: 0px 10px;
+      padding: 8px 10px;
+      background-color: #ececec;
+
+      * {
+        margin: 0;
+      }
+      .t-osszeg {
+        font-size: 18px;
+      }
+      .t-cat {
+        font-size: 14px;
+        background-color: #cccccc;
+        border-radius: 5px;
+        padding: 2px 4px;
+        border: 1px solid black;
+      }
+      .t-date {
+        justify-self: end;
+      }
+      .t-note {
+        grid-column: span 3;
+        padding: 10px 8px 0px 6px;
+        overflow-wrap: anywhere;
+      }
+    }
   }
 }
 

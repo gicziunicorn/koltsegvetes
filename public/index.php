@@ -66,7 +66,7 @@
             </button>
             <h3></h3>
             <div>
-                <label for="osszeg">Összeg:</label>
+                <label for="osszeg">Összeg (huf):</label>
                 <input name="editor" id="osszeg" type="text" required inputmode="numeric">
             </div>
             <div>
@@ -87,7 +87,7 @@
     <main id="data-main">
         <div id="egyenleg" class="container">
             <h3>Az egyenleged</h3>
-            <p><?php echo($_SESSION['egyenleg']); ?> Ft</p>
+            <p id="egyenleg-p">Ft</p>
             <hr>
         </div>
         <div id="bevetelek" class="long container">
@@ -97,7 +97,6 @@
                     <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
                 </svg>
             </button>
-            <p class="placeholder">Még nincsenek bevételeid</p>
         </div>
         <div id="kiadasok" class="long container">
             <h3>Kiadásaid</h3>
@@ -106,7 +105,6 @@
                     <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
                 </svg>
             </button>
-            <p class="placeholder">Még nincsenek bevételeid</p>
         </div>
     </main>
     <?php endif; ?>
