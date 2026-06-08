@@ -17,9 +17,11 @@ body {
   height: 100vh;
   display: block;
   font-family: "Google-Sans";
+  min-width: 450px;
 }
 
 nav {
+  min-width: 450px;
   background-color: var(--primary);
   color: white;
   padding: 10px 0;
@@ -31,10 +33,11 @@ nav {
   left: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 55px;
 
   h1 {
-    font-size: 3em;
+    font-size: min(3em, 4vw);
     margin: 0;
   }
 
@@ -183,10 +186,11 @@ main {
 }
 
 #data-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: start;
-  justify-content: unset;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 105px 30px 0px 30px;
   box-sizing: border-box;
 
