@@ -43,7 +43,7 @@
 
    ![Bejelentkezés](/dokumentumok/latvanyterv/bejelentkezes.png)
 
-   <h2>(Üres) Pénzügyi tervezési menü</h2>
+   <h2>Pénzügyi tervezési menü</h2>
 
    ![Pénzügyi menü](/dokumentumok/latvanyterv/penzugyiTervezes2.png)
 
