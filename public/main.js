@@ -41,9 +41,7 @@ function initialLoad(data) {
                 .text("Még nincs bevétel.")
         $("#bevetelek").append(p);
     }
-    console.log("fasz", vanKiadas)
     if (!vanKiadas) {
-        console.log("fasz")
         const p = $("<p>").addClass("placeholder")
                 .text("Még nincs kiadás.")
         $("#kiadasok").append(p);
@@ -195,6 +193,11 @@ $(document).ready(function () {
             const idopont = $("#idopont").val();
             const category = $("input[name='cat']:checked").val();
             const note = $("#note").val();
+
+            if (!osszeg || !idopont || !category || !note) {
+                window.alert("Nem adtad meg az összes adatot!");
+                return;
+            }
 
             const res = await fetch("../php/add.php", {
                 method: "POST",
