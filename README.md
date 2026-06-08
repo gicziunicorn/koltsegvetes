@@ -26,11 +26,17 @@
    - Ezeken a menükben a bevétel/kiadás összegét, kategóriáját, időpontját, és leírását muszály begépelni.
 
 <br>
+
    <p>Regisztrációs menü</p>
+   
    ![Regisztráció](/dokumentumok/latvanyterv/regisztracio.png)
+   
 <br>
+
    <p>Mező üresen hagyása esetében, a regisztráció gomb nem fog működni</p>
+   
    ![Regisztráció](/dokumentumok/latvanyterv/ures mezo regisztracio.png)
+   
    ![Regisztráció](/dokumentumok/latvanyterv/ures mezo regisztracio 2.png)
 
 ### Fontosabb felhasználói tudnivalók:
