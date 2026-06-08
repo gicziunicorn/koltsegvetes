@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $user = "root";
-$pass = "arch";
+$pass = "";
 $dbname = "koltsegvetes";
 
 try {
