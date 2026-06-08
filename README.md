@@ -27,13 +27,13 @@
 
 <br>
 
-   <p>Regisztrációs menü</p>
+   <h2>Regisztrációs menü</h2>
    
    ![Regisztráció](/dokumentumok/latvanyterv/regisztracio.png)
    
 <br>
 
-   <p>Mező üresen hagyása esetében, a regisztráció gomb nem fog működni</p>
+   <h2>Mező üresen hagyása esetében, a regisztráció gomb nem fog működni</h2>
    
    ![Regisztráció](/dokumentumok/latvanyterv/uresRegisztracio.png)
    
