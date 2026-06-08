@@ -27,6 +27,8 @@
 
 <br>
 
+   <img src="koltsegvetes/dokumentumok/latvanyterv/regisztracio"></img>
+
 ### Fontosabb felhasználói tudnivalók:
 
 - #### Hardver követelmény:
