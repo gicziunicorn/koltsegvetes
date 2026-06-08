@@ -35,9 +35,9 @@
 
    <p>Mező üresen hagyása esetében, a regisztráció gomb nem fog működni</p>
    
-   ![Regisztráció](/dokumentumok/latvanyterv/ures mezo regisztracio.png)
+   ![Regisztráció]("/dokumentumok/latvanyterv/ures mezo regisztracio.png")
    
-   ![Regisztráció](/dokumentumok/latvanyterv/ures mezo regisztracio 2.png)
+   ![Regisztráció]("/dokumentumok/latvanyterv/ures mezo regisztracio 2.png")
 
 ### Fontosabb felhasználói tudnivalók:
 
