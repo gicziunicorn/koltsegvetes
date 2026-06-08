@@ -89,6 +89,9 @@
             <h3>Az egyenleged</h3>
             <p id="egyenleg-p">Ft</p>
             <hr>
+            <label for="keret">Kiadások kerete:</label>
+            <input type="text" id="keret" value=<?php echo($_SESSION["keret"]); ?>>
+            <button style="width: 100px;padding:10px 20px" id="keretmentes">Mentés</button>
         </div>
         <div id="bevetelek" class="long container">
             <h3>Bevételeid</h3>
@@ -105,6 +108,9 @@
                     <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
                 </svg>
             </button>
+        </div>
+        <div id="havi" class="long container">
+            <h3>Havi tranzakciók</h3>
         </div>
     </main>
     <?php endif; ?>

@@ -16,8 +16,11 @@ function load() {
 }
 
 var vanBevetel, vanKiadas = false;
+var kiadasok = 0;
 
 function initialLoad(data) {
+    let keret = data.keret;
+
     $("#egyenleg-p").text(`${data.egyenleg} Ft`);
 
     const transactions = data.transactions;
@@ -27,6 +30,9 @@ function initialLoad(data) {
         const kategoria = transaction.kategoria;
         const note = transaction.note;
         const osszeg = parseInt(transaction.osszeg);
+        if ( new Date(idopont).getMonth() === new Date().getMonth() ) {
+            addMonthTransaction(osszeg, kategoria, idopont, note)
+        }
         addTransaction(osszeg, kategoria, idopont, note);
     }
 
@@ -35,11 +41,40 @@ function initialLoad(data) {
                 .text("Még nincs bevétel.")
         $("#bevetelek").append(p);
     }
+    console.log("fasz", vanKiadas)
     if (!vanKiadas) {
+        console.log("fasz")
         const p = $("<p>").addClass("placeholder")
                 .text("Még nincs kiadás.")
         $("#kiadasok").append(p);
     }
+
+    if (kiadasok > keret) {
+        window.alert("A kiadásaid túllépték a keretet!");
+    }
+}
+
+function addMonthTransaction(osszeg, kategoria, date, note) {
+    const t_div = $("<div>").addClass("transaction-card");
+    const t_osszeg = $("<p>").addClass("t-osszeg");
+    t_osszeg.text(`${osszeg} Ft`);
+    const t_cat = $("<span>").addClass("t-cat");
+    t_cat.text(kategoria);
+    const t_date = $("<p>").addClass("t-date");
+    t_date.text(date);
+    const t_note = $("<p>").addClass("t-note");
+    t_note.text(note);
+    t_div.append(t_osszeg, t_cat, t_date, t_note);
+    
+    var cont;
+    if (!vanKiadas) {
+        cont = $("<div>").addClass("transactions");
+        $("#havi").append(cont);
+    }
+    else {
+        cont = $("#kiadasok>.transactions")
+    }
+    cont.append(t_div);
 }
 
 function addTransaction(osszeg, kategoria, date, note) {
@@ -54,8 +89,10 @@ function addTransaction(osszeg, kategoria, date, note) {
     t_note.text(note);
     t_div.append(t_osszeg, t_cat, t_date, t_note);
     if (osszeg < 0) {
+        kiadasok += Math.abs(osszeg);
         var cont;
         if (!vanKiadas) {
+            cont = $("#kiadasok .placeholder").remove();
             cont = $("<div>").addClass("transactions");
             $("#kiadasok").append(cont);
         }
@@ -68,6 +105,7 @@ function addTransaction(osszeg, kategoria, date, note) {
     else {
         var cont;
         if (!vanBevetel) {
+            cont = $("#bevetelek .placeholder").remove();
             cont = $("<div>").addClass("transactions");
             $("#bevetelek").append(cont);
         }
@@ -88,6 +126,26 @@ $(document).ready(function () {
         changeYear: true,
         firstDay: 1,
     });
+
+    $("#keretmentes").on("click", async function() {
+        const res = await fetch("../php/keret.php", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({
+                keret: $("#keret").val(),
+            })
+        });
+        if (!res.ok) {
+            window.alert("error");
+            throw new Error("problem");
+        }
+        const resText = await res.text();
+        if (resText !== "ok") {
+            window.alert("error");
+            throw new Error(resText);
+        }
+        window.alert("Sikeresen rögzítve!");
+    })
 
     // Köszönjük a Gemininek
     $("#osszeg").on("input", function () {
