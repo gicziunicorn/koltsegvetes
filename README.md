@@ -27,7 +27,7 @@
 
 <br>
 
-   <img src="koltsegvetes/dokumentumok/latvanyterv/regisztracio"></img>
+   ![Regisztráció](/dokumentumok/latvanyterv/regisztacio.png)
 
 ### Fontosabb felhasználói tudnivalók:
 
