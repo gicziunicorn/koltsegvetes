@@ -45,7 +45,7 @@
 
    <h2>(Üres) Pénzügyi tervezési menü</h2>
 
-   ![Üres Pénzügyi menü](/dokumentumok/latvanyterv/penzugyiTervezesUres.png)
+   ![Üres Pénzügyi menü](/dokumentumok/latvanyterv/penzugyiTervezes.png)
 
    <h2>Bevételek menü</h2>
 
@@ -57,7 +57,7 @@
 
    <h2>(Kitöltött) Pénzügyi tervezési menü</h2>
 
-   ![Kitöltött Pénzügyi menü](/dokumentumok/latvanyterv/penzugyiTervezes.png)
+   ![Kitöltött Pénzügyi menü](/dokumentumok/latvanyterv/penzugyiTervezes2.png)
 
 
 ### Fontosabb felhasználói tudnivalók:
