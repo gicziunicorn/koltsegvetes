@@ -33,11 +33,32 @@
    
 <br>
 
-   <h2>Mező üresen hagyása esetében, a regisztráció gomb nem fog működni</h2>
+   <h2>Mező üresen hagyása esetében, a regisztráció gomb nem működik</h2>
    
    ![Regisztráció](/dokumentumok/latvanyterv/uresRegisztracio.png)
    
    ![Regisztráció](/dokumentumok/latvanyterv/uresRegisztracio2.png)
+
+   <h2>Bejelentkezési menü</h2>
+
+   ![Regisztráció](/dokumentumok/latvanyterv/bejeletkezes.png)
+
+   <h2>(Üres) Pénzügyi tervezési menü</h2>
+
+   ![Regisztráció](/dokumentumok/latvanyterv/penzugyiTervezesUres.png)
+
+   <h2>Bevételek menü</h2>
+
+   ![Regisztráció](/dokumentumok/latvanyterv/bevetel.png)
+
+   <h2>Kiadások menü</h2>
+
+   ![Regisztráció](/dokumentumok/latvanyterv/kiadas.png)
+
+   <h2>(Kitöltött) Pénzügyi tervezési menü</h2>
+
+   ![Regisztráció](/dokumentumok/latvanyterv/penzugyiTervezes.png)
+
 
 ### Fontosabb felhasználói tudnivalók:
 
